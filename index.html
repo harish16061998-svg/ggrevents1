@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GGR Events | Premium Event Planning</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>GGR <span>Events</span></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-tabs">
+                    <li class="tab active" data-tab="home">Home</li>
+                    <li class="tab" data-tab="services">Services</li>
+                    <li class="tab" data-tab="request">Request</li>
+                    <li class="tab" data-tab="contact">Contact Us</li>
+                    <li class="tab" data-tab="feedback">Feedback</li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Create Unforgettable Moments</h2>
+                    <p>Premium event planning services for weddings, parties, and special occasions</p>
+                    <button id="exploreServicesBtn" class="cta-button">Explore Our Services</button>
+                </div>
+            </div>
+
+            <!-- Reviews Section -->
+            <section class="reviews-section">
+                <div class="container">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <div class="reviews-container">
+                        <div class="review-card">
+                            <div class="review-content">
+                                <p>"Elegant Events transformed our wedding day into a magical experience. Every detail was perfect!"</p>
+                                <div class="review-author">
+                                    <h4>Sarah & Michael</h4>
+                                    <p>Wedding Event</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-content">
+                                <p>"The team's creativity and attention to detail exceeded our expectations. Highly recommended!"</p>
+                                <div class="review-author">
+                                    <h4>Johnson Family</h4>
+                                    <p>Birthday Celebration</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-content">
+                                <p>"Professional, reliable, and incredibly talented. Our corporate event was a huge success!"</p>
+                                <div class="review-author">
+                                    <h4>Tech Innovations Inc.</h4>
+                                    <p>Corporate Event</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="tab-content">
+            <div class="container">
+                <h2 class="section-title">Our Premium Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="bride">
+                        <div class="service-icon">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
+                        <h3>Bride Grooming & Makeup</h3>
+                        <p>Professional makeup and grooming services to make the bride look radiant on her special day.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef5d85d5c7d2?w=300&h=200&fit=crop" alt="Bride makeup" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=300&h=200&fit=crop" alt="Bride styling" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=300&h=200&fit=crop" alt="Wedding makeup" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="groom">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Groom Grooming & Styling</h3>
+                        <p>Complete grooming and styling solutions for the groom to look his best.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" alt="Groom styling" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=200&fit=crop" alt="Groom preparation" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?w=300&h=200&fit=crop" alt="Groom suit" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="officeParties">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Office Parties</h3>
+                        <p>Professional planning and execution of office parties to ensure a memorable corporate event.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=300&h=200&fit=crop" alt="Office party" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&h=200&fit=crop" alt="Corporate event" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=300&h=200&fit=crop" alt="Business celebration" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="clothes">
+                        <div class="service-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Clothes Custom Styling</h3>
+                        <p>Custom styling services for all family members to match the event theme perfectly.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=300&h=200&fit=crop" alt="Custom styling" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401f0?w=300&h=200&fit=crop" alt="Fashion styling" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?w=300&h=200&fit=crop" alt="Wedding attire" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="reception">
+                        <div class="service-icon">
+                            <i class="fas fa-archway"></i>
+                        </div>
+                        <h3>Reception Designing</h3>
+                        <p>Complete reception setup with elegant decorations and ambiance creation.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=300&h=200&fit=crop" alt="Reception design" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=300&h=200&fit=crop" alt="Wedding reception" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=300&h=200&fit=crop" alt="Event decoration" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="familyMakeup">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Family Makeup & Grooming</h3>
+                        <p>Professional makeup and grooming for all family members attending the event.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=300&h=200&fit=crop" alt="Family makeup" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1516975080664-611481863552?w=300&h=200&fit=crop" alt="Group styling" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=300&h=200&fit=crop" alt="Family preparation" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="familyFunction">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Family Function Services</h3>
+                        <p>Complete planning and execution services for all family-related celebrations.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef5d85d5c7d2?w=300&h=200&fit=crop" alt="Family function" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=300&h=200&fit=crop" alt="Celebration setup" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1516975080664-611481863552?w=300&h=200&fit=crop" alt="Event planning" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="photography">
+                        <div class="service-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Photography</h3>
+                        <p>Professional photography services to capture every precious moment.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=300&h=200&fit=crop" alt="Professional photography" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=300&h=200&fit=crop" alt="Wedding photography" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef5d85d5c7d2?w=300&h=200&fit=crop" alt="Event photography" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="candidPhotography">
+                        <div class="service-icon">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <h3>Candid Photography</h3>
+                        <p>Natural, unposed photography to capture authentic emotions and moments.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef5d85d5c7d2?w=300&h=200&fit=crop" alt="Candid moments" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=300&h=200&fit=crop" alt="Natural photography" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=300&h=200&fit=crop" alt="Emotional moments" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="catering">
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Food Catering</h3>
+                        <p>Delicious catering services with diverse menu options for all tastes.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop" alt="Food catering" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop" alt="Event catering" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300&h=200&fit=crop" alt="Buffet setup" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="stage">
+                        <div class="service-icon">
+                            <i class="fas fa-theater-masks"></i>
+                        </div>
+                        <h3>Stage Arrangements</h3>
+                        <p>Creative stage designs and arrangements to make your event memorable.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef5d85d5c7d2?w=300&h=200&fit=crop" alt="Stage design" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=300&h=200&fit=crop" alt="Event stage" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=300&h=200&fit=crop" alt="Wedding stage" class="service-photo">
+                        </div>
+                    </div>
+                    <div class="service-card" data-service="flowerDecoration">
+                        <div class="service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Flower Decoration</h3>
+                        <p>Beautiful floral arrangements and decorations to enhance the ambiance.</p>
+                        <div class="service-photos">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" alt="Flower decoration" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1516975080664-611481863552?w=300&h=200&fit=crop" alt="Floral arrangements" class="service-photo">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=300&h=200&fit=crop" alt="Wedding flowers" class="service-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Request Section -->
+        <section id="request" class="tab-content">
+          <div class="container">
+            <h2 class="section-title">Request Our Services</h2>
+            <div class="request-form-container impressive-bg">
+              <form id="requestForm" class="request-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required autocomplete="given-name" />
+                    <span class="error-message"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
+                    <span class="error-message"></span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" />
+                    <span class="error-message"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel" pattern="[0-9]{10,15}" />
+                    <span class="error-message"></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="serviceType">Requirement/Service Type</label>
+                  <select id="serviceType" name="serviceType" required>
+                    <option value="">Select a service</option>
+                    <option value="bride">Bride Grooming & Makeup</option>
+                    <option value="groom">Groom Grooming & Styling</option>
+                    <option value="clothes">Clothes Custom Styling</option>
+                    <option value="reception">Reception Designing</option>
+                    <option value="family">Family Makeup & Grooming</option>
+                    <option value="function">Family Function Services</option>
+                    <option value="photography">Photography</option>
+                    <option value="candid">Candid Photography</option>
+                    <option value="catering">Food Catering</option>
+                    <option value="stage">Stage Arrangements</option>
+                    <option value="flower">Flower Decoration</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="error-message"></span>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="startDate">Required From</label>
+                    <input type="date" id="startDate" name="startDate" required />
+                    <span class="error-message"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="endDate">Required To</label>
+                    <input type="date" id="endDate" name="endDate" required />
+                    <span class="error-message"></span>
+                  </div>
+                </div>
+                <button type="submit" class="submit-button prominent">Submit Request</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Stylish Modal for confirmation -->
+        <div id="requestSuccessModal" class="modal">
+          <div class="modal-content">
+            <span id="closeRequestSuccess" class="close">&times;</span>
+            <div class="modal-body">
+              <i class="fas fa-check-circle success-icon"></i>
+              <h2>Request Submitted!</h2>
+              <p>Your request has been received. We'll contact you soon!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="tab-content">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Office Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-fax"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Fax</h3>
+                                <p>+1 (555) 123-4568</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>info@ggrevents.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="management-info">
+                        <h3>Management Team</h3>
+                        <div class="manager-card">
+                            <div class="manager-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="manager-details">
+                                <h4>Emily Johnson</h4>
+                                <p>Event Manager</p>
+                                <p><i class="fas fa-phone"></i> +1 (555) 987-6543</p>
+                                <p><i class="fas fa-envelope"></i> emily.j@ggrevents.com</p>
+                            </div>
+                        </div>
+                        <div class="manager-card">
+                            <div class="manager-icon">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <div class="manager-details">
+                                <h4>Michael Roberts</h4>
+                                <p>Director</p>
+                                <p><i class="fas fa-phone"></i> +1 (555) 456-7890</p>
+                                <p><i class="fas fa-envelope"></i> michael.r@ggrevents.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Section as a tab -->
+        <section id="feedback" class="tab-content">
+            <div class="container">
+                <h2 class="section-title">Share Your Feedback</h2>
+                <div class="feedback-form-container">
+                    <form id="feedbackForm" class="feedback-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="feedbackName">Your Name</label>
+                                <input type="text" id="feedbackName" name="feedbackName" required />
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedbackEmail">Email</label>
+                                <input type="email" id="feedbackEmail" name="feedbackEmail" required />
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackMessage">Your Feedback</label>
+                            <textarea id="feedbackMessage" name="feedbackMessage" rows="5" placeholder="Please share your experience or suggestions..." required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 GGR Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-check-circle success-icon"></i>
+                <h2>Request Submitted Successfully!</h2>
+                <p>Thank you for choosing Elegant Events. Our team will contact you shortly to discuss your requirements.</p>
+                <button id="closeModal" class="modal-button">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Details Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <div class="modal-photos"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
