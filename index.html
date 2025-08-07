@@ -233,70 +233,14 @@
 
         <!-- Request Section -->
         <section id="request" class="tab-content">
-          <div class="container">
-            <h2 class="section-title">Request Our Services</h2>
-            <div class="request-form-container impressive-bg">
-              <form id="requestForm" class="request-form">
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required autocomplete="given-name" />
-                    <span class="error-message"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
-                    <span class="error-message"></span>
-                  </div>
+            <div class="container">
+                <h2 class="section-title">Request Our Services</h2>
+                <div class="request-button-container">
+                    <button type="button" class="google-button centered-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScRkWwaZ6MV29cDRHR-T92j1rUiKKJi7MvCrftenq10dRb2Eg/viewform?usp=header', '_blank')">
+                        Submit Request
+                    </button>
                 </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required autocomplete="email" />
-                    <span class="error-message"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required autocomplete="tel" pattern="[0-9]{10,15}" />
-                    <span class="error-message"></span>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="serviceType">Requirement/Service Type</label>
-                  <select id="serviceType" name="serviceType" required>
-                    <option value="">Select a service</option>
-                    <option value="bride">Bride Grooming & Makeup</option>
-                    <option value="groom">Groom Grooming & Styling</option>
-                    <option value="clothes">Clothes Custom Styling</option>
-                    <option value="reception">Reception Designing</option>
-                    <option value="family">Family Makeup & Grooming</option>
-                    <option value="function">Family Function Services</option>
-                    <option value="photography">Photography</option>
-                    <option value="candid">Candid Photography</option>
-                    <option value="catering">Food Catering</option>
-                    <option value="stage">Stage Arrangements</option>
-                    <option value="flower">Flower Decoration</option>
-                    <option value="flower">Office party</option>
-                    <option value="other">Other</option>
-                  </select>
-                  <span class="error-message"></span>
-                </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="startDate">Required From</label>
-                    <input type="date" id="startDate" name="startDate" required />
-                    <span class="error-message"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="endDate">Required To</label>
-                    <input type="date" id="endDate" name="endDate" required />
-                    <span class="error-message"></span>
-                  </div>
-                </div>
-                <button type="submit" class="submit-button prominent">Submit Request</button>
-              </form>
             </div>
-          </div>
         </section>
         <!-- Stylish Modal for confirmation -->
         <div id="requestSuccessModal" class="modal">
