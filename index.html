@@ -18,9 +18,7 @@
                 <ul class="nav-tabs">
                     <li class="tab active" data-tab="home">Home</li>
                     <li class="tab" data-tab="services">Services</li>
-                    <li class="tab" data-tab="request">Request</li>
-                    <li class="tab" data-tab="contact">Contact Us</li>
-                    <li class="tab" data-tab="feedback">Feedback</li>
+                    
                 </ul>
             </nav>
             <div class="mobile-menu">
@@ -81,7 +79,12 @@
         <!-- Services Section -->
         <section id="services" class="tab-content">
             <div class="container">
-                <h2 class="section-title">Our Premium Services</h2>
+                <div class="services-header">
+                    <h2 class="section-title">Our Premium Services</h2>
+                    <button type="button" class="submit-request-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScRkWwaZ6MV29cDRHR-T92j1rUiKKJi7MvCrftenq10dRb2Eg/viewform?usp=header', '_blank')">
+                        Submit Request
+                    </button>
+                </div>
                 <div class="services-grid">
                     <div class="service-card" data-service="bride">
                         <div class="service-icon">
@@ -228,37 +231,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Request Section -->
-        <section id="request" class="tab-content">
-            <div class="container">
-                <h2 class="section-title">Request Our Services</h2>
-                <div class="request-button-container">
-                    <button type="button" class="google-button centered-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScRkWwaZ6MV29cDRHR-T92j1rUiKKJi7MvCrftenq10dRb2Eg/viewform?usp=header', '_blank')">
-                        Submit Request
-                    </button>
-                </div>
-            </div>
-        </section>
-        <!-- Stylish Modal for confirmation -->
-        <div id="requestSuccessModal" class="modal">
-          <div class="modal-content">
-            <span id="closeRequestSuccess" class="close">&times;</span>
-            <div class="modal-body">
-              <i class="fas fa-check-circle success-icon"></i>
-              <h2>Testing Request Submitted!</h2>
-              <p>Under testing Your request has been received. We'll contact you soon!</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Section -->
-        <section id="contact" class="tab-content">
-            <div class="container">
-                <h2 class="section-title">Contact Us</h2>
-                <div class="contact-container">
+                
+                <!-- Contact Details moved to Services Section -->
+                <div class="contact-container" style="margin-top: 60px;">
+                    <h2 class="section-title">Contact Us</h2>
                     <div class="contact-info">
                         <div class="contact-card">
                             <div class="contact-icon">
@@ -284,11 +260,11 @@
                             </div>
                             <div class="contact-details">
                                 <h3>Email</h3>
-                                <p>info1ggrevents@gmail.com</p>
+                                <p>infoggrevents@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                    <div class="management-info">
+                    <div class="management-info" style="margin-top: 30px;">
                         <h3>Management Team</h3>
                         <div class="manager-card">
                             <div class="manager-icon">
@@ -311,7 +287,8 @@
                                 <p><i class="fas fa-phone"></i> +91 9381022079</p>
                                 <p><i class="fas fa-envelope"></i>ajay_ggrevents@gmail.com</p>
                             </div>
-                            <div class="manager-card">
+                        </div>
+                        <div class="manager-card">
                             <div class="manager-icon">
                                 <i class="fas fa-user-cog"></i>
                             </div>
@@ -327,40 +304,42 @@
             </div>
         </section>
 
-        <!-- Feedback Section as a tab -->
-        <section id="feedback" class="tab-content">
+        <!-- Request Section -->
+        <section id="request" class="tab-content">
             <div class="container">
-                <h2 class="section-title">Share Your Feedback</h2>
-                <div class="feedback-form-container">
-                    <form id="feedbackForm" class="feedback-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="feedbackName">Your Name</label>
-                                <input type="text" id="feedbackName" name="feedbackName" required />
-                                <span class="error-message"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="feedbackEmail">Email</label>
-                                <input type="email" id="feedbackEmail" name="feedbackEmail" required />
-                                <span class="error-message"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="feedbackMessage">Your Feedback</label>
-                            <textarea id="feedbackMessage" name="feedbackMessage" rows="5" placeholder="Please share your experience or suggestions..." required></textarea>
-                            <span class="error-message"></span>
-                        </div>
-                        <button type="submit" class="submit-button">Submit Feedback</button>
-                    </form>
+                <h2 class="section-title">Request Our Services</h2>
+                <div class="request-button-container" style="display: flex; justify-content: space-between; align-items: center;">
+                    <button type="button" class="google-button centered-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScRkWwaZ6MV29cDRHR-T92j1rUiKKJi7MvCrftenq10dRb2Eg/viewform?usp=header', '_blank')">
+                        Submit Request
+                    </button>
+                    <button type="button" class="submit-button" onclick="window.open('https://www.google.com', '_blank')">
+                        Feedback
+                    </button>
                 </div>
             </div>
         </section>
+        <!-- Stylish Modal for confirmation -->
+        <div id="requestSuccessModal" class="modal">
+          <div class="modal-content">
+            <span id="closeRequestSuccess" class="close">&times;</span>
+            <div class="modal-body">
+              <i class="fas fa-check-circle success-icon"></i>
+              <h2>Testing Request Submitted!</h2>
+              <p>Under testing Your request has been received. We'll contact you soon!</p>
+            </div>
+          </div>
+        </div>
+        
+        
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2023 GGR Events. All rights reserved.</p>
+        <div class="container" style="display: flex; justify-content: center; align-items: center; position: relative;">
+            <button type="button" class="feedback-btn" onclick="window.open('https://www.google.com', '_blank')" style="position: absolute; top: 10px; right: 20px; z-index: 100;">
+                <i class="fas fa-comment-dots"></i> Feedback
+            </button>
+            <p style="width: 100%; text-align: center; color: #ccc; font-size: 14px;">&copy; 2023 GGR Events. All rights reserved.</p>
         </div>
     </footer>
 
@@ -390,4 +369,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
